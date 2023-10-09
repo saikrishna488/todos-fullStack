@@ -1,0 +1,108 @@
+.container{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.todo-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-box input{
+  outline: none;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 8px;
+  color: black;
+}
+
+.todo-box input:focus{
+  border: 5px solid green;
+}
+
+.todo-box button{
+  outline: none;
+  margin: 4px;
+  padding: 4px 5px;
+  border-radius: 8px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+.todo-box button:hover{
+  background-color: white;
+  color: green;
+  scale: 1.1;
+}
+
+.todos{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(33, 19, 33);
+  margin: 5px;
+  padding: 5px;
+  overflow-y: auto;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.todo{
+  text-align: center;
+  min-width: 300px;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: white;
+  margin: 3px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text{
+  max-width: 200px;
+  display: inline-block;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.img{
+  margin-left: auto; 
+  cursor: pointer;
+}
+.img:active{
+  scale: 1.2;
+}
+
+.tick{
+  cursor: pointer;
+}
+.tick:active{
+  scale: 1.2;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  background-color: purple;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 6px;
+  margin: 5px;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+}
