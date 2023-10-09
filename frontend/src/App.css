@@ -74,6 +74,7 @@
   display: inline-block;
   word-wrap: break-word;
   cursor: pointer;
+  text-align: left;
 }
 
 .img{
