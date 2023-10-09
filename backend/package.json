@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx ts-node server.ts"
+    "start": "npx ts-node server.ts",
+    "vercel-build": "npx ts-node server.ts"
   },
   "author": "",
   "license": "ISC",

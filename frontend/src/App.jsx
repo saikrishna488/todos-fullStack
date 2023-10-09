@@ -14,10 +14,10 @@ function App() {
   useEffect(()=>{
     const getTodos = async ()=>{
       try{
-        let todos = (await axios.get("http://localhost:5000/todo")).data.todo;
+        let todos = (await axios.get("https://friendly-space-rotary-phone-7qvvwxxvq4pfpr4p-5000.app.github.dev/todo")).data.todo;
         dispatch(addInitial(todos));
 
-        let completedTodos = (await axios.get("http://localhost:5000/success")).data.todo;
+        let completedTodos = (await axios.get("https://friendly-space-rotary-phone-7qvvwxxvq4pfpr4p-5000.app.github.dev/success")).data.todo;
         dispatch(addComplete(completedTodos));
       }
       catch(e){

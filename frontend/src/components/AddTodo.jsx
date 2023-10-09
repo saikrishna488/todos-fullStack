@@ -12,7 +12,7 @@ const AddTodo = () => {
     e.preventDefault();
     if (input != "") {
       try{
-        let add = await axios.post("http://localhost:5000/todo",{
+        let add = await axios.post("https://friendly-space-rotary-phone-7qvvwxxvq4pfpr4p-5000.app.github.dev/todo",{
           text : input
         });
         if(add.data.todo){
