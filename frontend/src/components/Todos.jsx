@@ -8,7 +8,7 @@ import axios from "axios";
 import { useState } from "react";
 
 const Todos = () => {
-  const [pending, setPending] = useState(false);
+  const [pending, setPending] = useState(true);
   const todos = useSelector((state) => state.todos.todos);
   const completedTodos = useSelector((state) => state.completed.completed);
   const dispatch = useDispatch();
