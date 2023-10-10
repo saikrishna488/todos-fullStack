@@ -19,7 +19,7 @@ const Todos = () => {
 
   const validate = async (id) => {
     try {
-      let del = await axios.delete("https://friendly-space-rotary-phone-7qvvwxxvq4pfpr4p-5000.app.github.dev/todo", {
+      let del = await axios.delete("http://20.193.159.30/todo", {
         headers: {
           "Content-Type": "application/json"
         },
@@ -42,7 +42,7 @@ const Todos = () => {
 
   const validate2 = async (id) => {
     try {
-      let del = await axios.delete("https://friendly-space-rotary-phone-7qvvwxxvq4pfpr4p-5000.app.github.dev/success", {
+      let del = await axios.delete("http://20.193.159.30/success", {
         headers: {
           "Content-Type": "application/json"
         },
@@ -66,7 +66,7 @@ const Todos = () => {
 
   const completed = async (todo) => {
     try {
-      let addTodo = await axios.post("https://friendly-space-rotary-phone-7qvvwxxvq4pfpr4p-5000.app.github.dev/success", {
+      let addTodo = await axios.post("http://20.193.159.30/success", {
         text: todo.text
       });
       validate(todo.id);
